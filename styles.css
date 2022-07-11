@@ -47,11 +47,11 @@ ul {
     display : flex;
     flex-direction: column;
     max-width: 50%;
+    justify-content: center;
 }
 .right-content {
     display:flex;
-    background-color: gray;
-    padding : 0 100px;
+    max-width: 50%;
     align-items: center;
 }
 button {
@@ -66,4 +66,9 @@ button {
 .left-content * {
     margin-top: 0;
     margin-bottom: 0;
+}
+img {
+    display : flex;
+    max-width: 500px;
+    border-radius: 20px;
 }

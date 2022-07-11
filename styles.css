@@ -3,11 +3,14 @@ body {
     margin : 0;
 }
 
+/* HEADER */
+
 header {
     display: flex;
     flex-direction: column;
     background-color: #1F2937;
-    padding : 10px 100px;
+    padding : 10px 100px 50px;
+    gap : 50px
 }
 h1, .main {
     color : #F9FAF8
@@ -21,9 +24,9 @@ h1 {
     font-weight: bold;
 }
 
-.secondary {
+.secondary, button {
     color : #e5e7eb;
-    font-size: 18px
+    font-size: 18px;
 }
 .header-header {
     display : flex;
@@ -34,4 +37,33 @@ ul {
     list-style-type: none;
     display: flex;
     gap : 20px;
+}
+.header-content {
+    display: flex;
+    gap : 50px;
+    justify-content: space-between;
+}
+.left-content {
+    display : flex;
+    flex-direction: column;
+    max-width: 50%;
+}
+.right-content {
+    display:flex;
+    background-color: gray;
+    padding : 0 100px;
+    align-items: center;
+}
+button {
+    margin : 0;
+    width: fit-content;
+    background-color: #3882F6;
+    padding : 5px 30px;
+    border-radius: 5px;
+    border : 0;
+}
+
+.left-content * {
+    margin-top: 0;
+    margin-bottom: 0;
 }
